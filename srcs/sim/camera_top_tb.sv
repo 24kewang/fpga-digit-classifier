@@ -1,3 +1,5 @@
+// Use tb_digit_cnn for testing the neural network modules with a generated test image module
+
 module tb_digit_cnn();
 timeunit 10ns;  // This is the amount of time represented by #1 
 timeprecision 1ns;
@@ -95,6 +97,8 @@ timeprecision 1ns;
 
 endmodule
 
+
+// Uncomment the following camera_top_tb module to test the SCCB and camera modules
 
 //`timescale 1ns/1ps
 

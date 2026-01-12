@@ -17,7 +17,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports {Clk}]
 ## Reset Button (BTN0) - active high
 ## ======================================================
 set_property PACKAGE_PIN J2 [get_ports {reset_rtl_0}]
-set_property IOSTANDARD LVCMOS33 [get_ports {reset_rtl_0}]
+set_property IOSTANDARD LVCMOS25 [get_ports {reset_rtl_0}]
 
 ## ======================================================
 ## HDMI TMDS Clock
@@ -74,6 +74,45 @@ set_property PACKAGE_PIN H13 [get_ports {cam_sioc}]
 set_property IOSTANDARD LVCMOS33 [get_ports {cam_sioc}]
 set_property PULLUP true [get_ports {cam_sioc}] ; # optional pull-up
 
+## ===============================
+## Pin Assignment: LEDs/HEX Displays
+## ===============================
+
+set_property PACKAGE_PIN G6 [get_ports {hex_grid[0]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {hex_grid[0]}]
+
+set_property PACKAGE_PIN H6 [get_ports {hex_grid[1]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {hex_grid[1]}]
+
+set_property PACKAGE_PIN C3 [get_ports {hex_grid[2]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {hex_grid[2]}]
+
+set_property PACKAGE_PIN B3 [get_ports {hex_grid[3]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {hex_grid[3]}]
+
+set_property PACKAGE_PIN E6 [get_ports {hex_seg[0]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {hex_seg[0]}]
+
+set_property PACKAGE_PIN B4 [get_ports {hex_seg[1]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {hex_seg[1]}]
+
+set_property PACKAGE_PIN D5 [get_ports {hex_seg[2]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {hex_seg[2]}]
+
+set_property PACKAGE_PIN C5 [get_ports {hex_seg[3]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {hex_seg[3]}]
+
+set_property PACKAGE_PIN D7 [get_ports {hex_seg[4]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {hex_seg[4]}]
+
+set_property PACKAGE_PIN D6 [get_ports {hex_seg[5]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {hex_seg[5]}]
+
+set_property PACKAGE_PIN C4 [get_ports {hex_seg[6]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {hex_seg[6]}]
+
+set_property PACKAGE_PIN B5 [get_ports {hex_seg[7]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {hex_seg[7]}]
 
 ## ----------------------
 ## PIXEL DATA BUS D0-D7
